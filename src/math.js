@@ -22,10 +22,9 @@ function fibonacci(n) {
     throw new TypeError("O argumento deve ser um número válido");
   }
   if (n <= 0) {
-    throw new Error("Não existe fibonnacci de número menor ou igual a zero");
+    throw new Error("Não existe fibonacci de número menor ou igual a zero");
   }
-  if (n === 1) return 1; // O primeiro número Fibonacci
-  if (n === 2) return 1; // O segundo número Fibonacci
+  if (n === 1 || n === 2) return 1; // Os dois primeiros números de Fibonacci
   
   let a = 1, b = 1;
   for (let i = 3; i <= n; i++) {
