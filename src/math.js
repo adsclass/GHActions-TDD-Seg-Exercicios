@@ -1,9 +1,8 @@
 function fatorial(w) {
-
   if (typeof w !== 'number') {
     throw new TypeError("O argumento deve ser um número válido");
   }
- 
+
   if (w < 0) {
     throw new Error("Não existe fatorial de número negativo");
   }
@@ -17,30 +16,27 @@ function fatorial(w) {
 }
 
 function fibonacci(w) {
- 
   if (typeof w !== 'number') {
     throw new TypeError("O argumento deve ser um número válido");
   }
- 
+
   if (w <= 0) {
-    throw new Error("Não existe fibonnacci de número menor ou igual a zero");
+    throw new Error("Não existe fibonacci de número menor ou igual a zero");
   }
 
   const sequencia = [0, 1];
   for (let i = 2; i <= w; i++) {
     sequencia[i] = sequencia[i - 1] + sequencia[i - 2];
   }
-  return sequencia[w]; 
+  return sequencia[w]; // Retorna o n-ésimo número da sequência
 }
 
 function ehPrimo(w) {
-
   if (typeof w !== 'number') {
     throw new TypeError("O argumento deve ser um número válido");
   }
-
   if (w <= 1) {
-    throw new Error("Não número primo de número menor ou igual a 1");
+    throw new Error("Não existe número primo de número menor ou igual a 1");
   }
 
   for (let i = 2; i <= Math.sqrt(w); i++) {
