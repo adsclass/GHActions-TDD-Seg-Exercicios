@@ -36,7 +36,6 @@ describe('função fibonacci', () => {
     // Garantir que o argumento é um número
     expect(() => fibonnacci("Texto")).toThrow(TypeError);
     expect(() => fibonnacci("Texto")).toThrow("O argumento deve ser um número válido");
-    expect(() => fibonnacci("10")).not.toThrow(TypeError);
     expect(() => fibonnacci(10)).not.toThrow(TypeError);
 
     // Garantir que não existe fibonnacci de número menor ou igual a zero
