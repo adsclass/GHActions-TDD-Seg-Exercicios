@@ -1,4 +1,4 @@
-const { fatorial, fibonnacci, ehPrimo } = require('./math');
+const { fatorial, fibonacci, ehPrimo } = require('./math');
 
 describe('função fatorial', () => {
   test('valida entrada', () => {
