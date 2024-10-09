@@ -16,7 +16,7 @@ function fibonacci(n) {
     throw new TypeError("O argumento deve ser um número válido");
   }
   if (n <= 0) {
-    throw new Error("Não existe fibonnacci de número menor ou igual a zero");
+    throw new Error("Não existe fibonacci de número menor ou igual a zero");
   }
   if (n === 1 || n === 2) {
     return 1;
